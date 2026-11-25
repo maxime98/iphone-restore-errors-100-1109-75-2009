@@ -1,0 +1,35 @@
+[iPhoneUpdater 8.log]
+[17:24:51.0725] Depth:2 Code:75 Error:Missing data volume on APFS formatted device, erase required
+
+[iPhoneUpdater 9.log]
+[17:27:52.0125] Unable to query iBoot ramdisk-size. Libusbrestore error : 268435456
+[17:27:53.0644] Depth:0 Code:2009 Error:Failed to restore device in recovery mode, libusbrestore error:2009
+
+[iPhoneUpdater 10.log]
+[17:28:32.0412] _AMRestorePushBootLogo failed with 2009
+[17:28:32.0412] Depth:0 Code:2009 Error:Failed to restore device in recovery mode, libusbrestore error:2009
+
+[iPhoneUpdater 11.log]
+[17:40:43.0309] Restore was successful
+
+[asl.123134_241126.log]
+[21916 @ Tue Nov 24 12:54:12 2026] [com.apple.SyncServices.AppleMobileDeviceHelper AppleMobileDeviceHelper.exe] Exception NSInvalidArgumentException while handling message: -[__NSCFString containsString:]: unrecognized selector sent to instance <ADDRESS>.
+    AMSRequestKey = AMBArchiveBackupRequest;
+
+[Windows 10 ASL transcript]
+[14504 @ Tue 11 24 17:07:42 2026] [(unknown facility) AppleMobileDeviceProcess.exe] _AMDeviceInsecureNotificationCallback (thread 11768): Successfully paired
+[14504 @ Tue 11 24 17:08:54 2026] [(unknown facility) AppleMobileDeviceProcess.exe] AMDeviceStartSession (thread 2412): Could not start session with device <DEVICE_UDID>: kAMDInvalidHostIDError
+[3508 @ Tue 11 24 17:09:15 2026] [(unknown facility) AMPDevicesAgent.exe] AMDeviceSecureStartService (thread 9072): Failed to start service via AppleUSBDeviceMux: 0xe800005d (kAMDServiceProhibitedError)
+[3508 @ Tue 11 24 17:09:21 2026] [(unknown facility) AMPDevicesAgent.exe] AMDeviceSecureStartService (thread 4136): Failed to start service via AppleUSBDeviceMux: 0xe800005d (kAMDServiceProhibitedError)
+[3568 @ Tue 11 24 17:10:26 2026] [(unknown facility) AppleMobileBackup.exe] _MobileDeviceLibraryInitRoutine (thread 14528): MobileDevice.framework version: 1860.49.2
+[3568 @ Tue 11 24 17:10:26 2026] [(unknown facility) AppleMobileBackup.exe] AMDeviceNotificationSubscribeWithOptions (thread 14528): Subscribed for device notifications from usbmuxd.
+
+[Windows 10 DeviceLink excerpt, supplied in conversation]
+2026-11-24 17:08:05.434 SocketRecv (data): return of 0 bytes
+2026-11-24 17:08:05.441 NULL data returned from read
+2026-11-24 17:08:05.443 SocketSend (data): error 32: Broken pipe
+
+[iMazing active transfer, PowerShell sample; 30 seconds]
+Process                       ReadMiB WriteMiB OtherMiB
+AppleMobileDeviceProcess.exe  0.009   0        211.989
+iMazing.exe                   209.371 0.002    28.246

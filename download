@@ -1,0 +1,11 @@
+# Never commit private device backups or diagnostic dumps
+*.plist
+*.db
+*.sqlite*
+*.ipsw
+*.log
+*.zip
+Backup/
+MobileSync/
+private/
+.env
